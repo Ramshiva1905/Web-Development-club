@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        const Calculator=(a,b,op)=>{
+            switch(op){
+                case'+':return a+b;
+                case'-':return a-b;
+                case '/':return a/b;
+                case '%':return a%b;
+                default:return "Operator not Found!";
+            }
+        }
+        const a=prompt("Enter the a value:");
+        const b=prompt("Enter the b value:");
+        const op=prompt("enter operation you want(+,-,/,%):");
+        console.log(Calculator(a,b,op));
+    </script>
+</body>
+</html>
